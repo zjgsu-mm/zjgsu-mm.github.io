@@ -1,0 +1,14 @@
+*.DS_Store
+*.sample
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.xdv
+*.el
+*.dot
+*.vrb
+*.directory
+*.eps
