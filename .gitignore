@@ -3,3 +3,9 @@ _site/
 .bundle/
 vendor/
 Gemfile.lock
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
