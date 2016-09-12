@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN" class="han-init">
+{% include head.html %}
+<body>
+  <header class="header" role="banner">{% include header.html %}</header>
+  <div class="header-shadow"></div>
+  <div id="main">
+    {{ content }}
+  </div>
+  {% include disqus.html %}
+  <script src="{{ site.baseurl }}/public/han.js"></script>
+</body>
+</html>

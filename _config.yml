@@ -1,0 +1,17 @@
+title: Mathematical Modeling and Matlab
+baseurl: /mm
+
+disqus: zjgsumm
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
+
+exclude: [LICENSE, Gemfile, Gemfile.lock, README.md, vendor]
+
+sass:
+    style: compressed
