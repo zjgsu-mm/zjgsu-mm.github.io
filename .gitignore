@@ -9,3 +9,4 @@ Gemfile.lock
 *.out
 *.snm
 *.toc
+*.el
