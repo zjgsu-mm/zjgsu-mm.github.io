@@ -10,3 +10,4 @@ Gemfile.lock
 *.snm
 *.toc
 *.el
+*.synctex.gz
