@@ -27,13 +27,13 @@
 \setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{KaiTi}
 
 % Title
-\title{第5章 实验建模}
+\title{第5章 模拟方法建模}
 \author{韩建伟}
 \institute{
-  浙江工商大学信息学院\\
-  \texttt{hanjianwei@mail.zjgsu.edu.cn}
+  信息学院\\
+  \texttt{mm@hanjianwei.com}
 }
-\date{2011/10/23}
+\date{2016/11/08}
 
 \begin{document}
 
@@ -87,7 +87,7 @@
       & 近似面积，其中$0 \le f(x) \le M$.\\
       \rowcolor{lightgray}\textbf{第1步} & 初始化: $COUNTER = 0$\\
       \textbf{第2步} & 对$i = 1, 2, ..., n$, 进行第$3 \sim 5$步\\
-      \rowcolor{lightgray}\textbf{\quad{}第3步} & 计算随机坐标$x_i$和$y_i$，满足$a \le x \le b$，$0 \le y_i \le M$.\\
+      \rowcolor{lightgray}\textbf{\quad{}第3步} & 计算随机坐标$x_i$和$y_i$，满足$a \le x_i \le b$，$0 \le y_i \le M$.\\
       \textbf{\quad{}第4步} & 对随机坐标$x_i$计算$f(x_i)$.\\
       \rowcolor{lightgray}\textbf{\quad{}第5步} & 若$y_i \le f(x_i)$，则COUNTER加1；否则COUNTER不变.\\
       \textbf{第6步} & 计算$AREA=M(b-a)COUNTER/n$\\
@@ -338,8 +338,7 @@
       & 否则，计算日存储费和总费用：\\
       & \quad{}$C = C + I*s$\\
       \rowcolor{lightgray}& 减少模拟中剩下的天数\\
-      \rowcolor{lightgray}\multirow{-2}*{\textbf{\quad{}第9步}} & \quad{}$K = K - 1$\\
-       & 停止
+      \rowcolor{lightgray}\multirow{-2}*{\textbf{\quad{}第9步}} & \quad{}$K = K - 1$
     \end{tabular}
   \end{table}
   
@@ -443,7 +442,7 @@
     \begin{tabular}{l|l}
       \rowcolor{lightgray} & 假定时钟从$t=0$分钟开始计时，计算船$i$的到达时间\\
       \rowcolor{lightgray}\multirow{-2}*{\textbf{\quad{}第6步}} & \quad{}$arrive_i=arrive_{i-1}+between_i$\\
-      \multirow{2}*{\textbf{\quad{}第7步}} & 计算船$i$到达与船$i-1$卸货完毕的时间之关：\\
+      \multirow{2}*{\textbf{\quad{}第7步}} & 计算船$i$到达与船$i-1$卸货完毕的时间之差：\\
       & \quad{}$timediff=arrive_i-finish_{i-1}$\\
       \rowcolor{lightgray} &   若timediff非负，则卸货设备空闲：\\
       \rowcolor{lightgray} & \quad{}$idlei=timediff$且$waiti=0$\\
@@ -522,15 +521,14 @@
   
 \end{frame}
 
-\begin{frame}{扩展：早高峰时间的电梯调度算法}
+\begin{frame}{扩展}
 
-参看附录B.
+早高峰时间的电梯调度算法.
   
 \end{frame}
 
-\begin{frame}
-  Questions?
-  谢谢！
+\begin{frame}{作业}
+  用Matlab实现港口的调度算法。
 \end{frame}
 
 \end{document}

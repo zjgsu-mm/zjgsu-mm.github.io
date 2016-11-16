@@ -9,3 +9,6 @@
 2. [建模过程、比例性和几何相似性](./chap02/chap02.pdf)
 3. [模型拟合](./chap03/chap03.pdf)
 4. [实验建模](./chap04/chap04.pdf)
+5. [模拟方法建模](./chap05/chap05.pdf)
+6. [离散概率模型](./chap06/chap06.pdf)
+7. [离散模型的优化](./chap07/chap07.pdf)

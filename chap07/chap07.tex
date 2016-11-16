@@ -30,10 +30,10 @@
 \title{第7章 离散模型的优化}
 \author{韩建伟}
 \institute{
-  浙江工商大学信息学院\\
-  \texttt{hanjianwei@mail.zjgsu.edu.cn}
+  信息学院\\
+  \texttt{mm@hanjianwei.com}
 }
-\date{2011/11/14}
+\date{2016/11/15}
 
 \begin{document}
 
@@ -66,7 +66,7 @@
 
 \begin{frame}{用切比雪夫准则拟合直线}
   \begin{block}{问题}
-    给定$m$个数据点$(x_i, y_i), i=1, 2, ..., m$,拟合一条直线$y=ax+b$(即确定参数$a, b$)，使得所有数据点$(x_i, y_i)$和拟合直线上对应的点$(x_i, ax_i+b)$之间的距离的最大值$r_{max}$最小。也就是说，对整个这组数据点而言，最大绝对偏差$r=max\{|y_i-y(x_i)\}$最小。
+    给定$m$个数据点$(x_i, y_i), i=1, 2, ..., m$,拟合一条直线$y=ax+b$(即确定参数$a, b$)，使得所有数据点$(x_i, y_i)$和拟合直线上对应的点$(x_i, ax_i+b)$之间的距离的最大值$r_{max}$最小。也就是说，对整个这组数据点而言，最大绝对偏差$r=max\{|y_i-y(x_i)|\}$最小。
   \end{block}
 
   这种准则实际上定义了如下优化问题：
@@ -186,7 +186,7 @@
 \end{frame}
 
 \begin{frame}{无约束优化问题}
-  \begin{block}{问题}
+  \begin{block}{绝对偏差之和问题}
     对模型$y=f(x)$，如果$y(x_i)$表示$x=x_i$点的函数值， $(x_i, y_i)表示对应的数据点, i=1, 2, ..., m$, 那么准则可以表示如下：找到模型$y=f(x)$,使得
     \[
     \mbox{Min} \sum_{i=1}^m |y_i - y(x_i)|
@@ -1134,11 +1134,6 @@
   \begin{figure}
     \includegraphics[height=.8\textheight{}]{fminsearch.png}
   \end{figure}      
-\end{frame}
-
-\begin{frame}
-  Questions?
-  谢谢！
 \end{frame}
 
 \end{document}
