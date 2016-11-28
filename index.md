@@ -12,3 +12,4 @@
 5. [模拟方法建模](./chap05/chap05.pdf)
 6. [离散概率模型](./chap06/chap06.pdf)
 7. [离散模型的优化](./chap07/chap07.pdf)
+8. [图论建模](./chap08/chap08.pdf)
