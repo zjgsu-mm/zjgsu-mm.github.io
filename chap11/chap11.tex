@@ -30,10 +30,10 @@
 \title{第11章 微分方程建模}
 \author{韩建伟}
 \institute{
-  浙江工商大学信息学院\\
-  \texttt{hanjianwei@mail.zjgsu.edu.cn}
+  信息学院\\
+  \texttt{mm@hanjianwei.com}
 }
-\date{2011/12/12}
+\date{2016/12/06}
 
 \begin{document}
 
@@ -196,6 +196,21 @@
     \centering
     \includegraphics[width=0.6\textwidth]{yp.png}
   \end{figure}
+\end{frame}
+
+\begin{frame}{逻辑斯谛模型的另一种形式}
+  设$t^*$表示$P$达到极限值$M$一半的时刻，即$P(t^*) = M/2$:
+
+  \[
+  t^* = t_0 - \frac{1}{rM} \ln \frac{P_0}{M-P_0}
+  \]
+
+  化简得：
+
+  \[
+  P(t) = \frac{M}{1 + e^{-rM(t-t^*)}}
+  \]
+  
 \end{frame}
 
 \begin{frame}{酵母模型拟合结果}
@@ -421,11 +436,6 @@
   \item [options] 设定误差...
   \end{itemize}
 
-\end{frame}
-
-\begin{frame}
-  Questions?
-  谢谢！
 \end{frame}
 
 \end{document}
