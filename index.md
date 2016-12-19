@@ -15,3 +15,4 @@
 8. [图论建模](./chap08/chap08.pdf)
 9. [决策论](./chap09/chap09.pdf)
 11. [用微分方程建模](./chap11/chap11.pdf)
+13. [连续模型的优化](./chap13/chap13.pdf)
