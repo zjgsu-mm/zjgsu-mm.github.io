@@ -1,17 +1,42 @@
-title: Mathematical Modeling and Matlab
-baseurl: /mm
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-disqus: zjgsumm
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: 数学建模与Matlab
+email: hanjianwei@zjgsu.edu.cn
+description: >- # this means to ignore newlines until "baseurl:"
+    本课程主要利用Matlab作为数学工具来建立和求解数学模型。
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://mm.zjgsu.xyz" # the base hostname & protocol for your site, e.g. http://example.com
 
-defaults:
-  -
-    scope:
-      path: ''
-      type: pages
-    values:
-      layout: page
+twitter_username: hanjianwei
+github_username:  zjgsu-mm
 
-exclude: [LICENSE, Gemfile, Gemfile.lock, README.md, vendor]
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
 
-sass:
-    style: compressed
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
