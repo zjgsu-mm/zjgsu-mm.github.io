@@ -3,17 +3,16 @@
 \usetheme{Boadilla}
 
 % Chinese
-% \setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{KaiTi}
+\setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{KaiTi}
 
 % Title
 \title{数学建模与Matlab}
 \subtitle{第一章 对变化进行建模}
 \author{韩建伟}
 \institute{
-  计信学院\\
-  \texttt{mm@hanjianwei.com}
+  计算机学院
 }
-\date{2017/09/22}
+\date{2018/09/14}
 
 \begin{document}
 
@@ -26,18 +25,19 @@
 
 \begin{description}
 \item[内容] 数学建模 + Matlab
-\item[教材] 数学建模(原书第5版), Frank R.Giordano, Willam P.Fox, Steven B.Horton, 叶其孝 / 姜启源译, 机械工业出版社
-\item[参考] 数学模型(第四版), 姜启源 / 谢金星 / 叶俊, 高等教育出版社\\
-  数学建模, 杨启帆 / 谈之奕 / 何勇, 浙江大学出版社\\
+\item[教材] 数学建模(原书第5版), Frank R.Giordano, Willam P.Fox, Steven B.Horton, 叶其孝/姜启源译, 机械工业出版社
+\item[参考] 数学模型(第四版), 姜启源/谢金星/叶俊, 高等教育出版社\\
+  数学建模, 杨启帆/谈之奕/何勇, 浙江大学出版社\\
+  数学建模算法与应用, 司守奎/孙玺菁, 国防工业出版社 \\
+  MATLAB揭秘, David McMahon著/郑碧波译\\
   精通MATLAB R2011a, 张志涌, 北京航天航空大学出版社
-\item[网站] http://zjsu.github.io/mm
 \end{description}
   
 \end{frame}
 
 \begin{frame}{课程安排}
   \begin{description}
-  \item[时间] 15周 = 12课堂 + 2实验 + 1假期
+  \item[时间] 15周 = 6课堂 + 9实验
   \item[考试] 成绩 = 平时 $\times$ 30\%+ 期末(闭卷) $\times$ 70\%
   \item[作业] 作业 = 小作业 + 大作业(2-3人一个团队)
   \end{description}
@@ -67,6 +67,15 @@
 \begin{frame}{弹簧系统}
   \begin{center}
     \includegraphics[width=.4\textwidth{}]{spring.png}
+    \hspace{.2\textwidth{}}
+    \includegraphics[width=.15\textwidth{}]{spring-table.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}{弹簧系统建模}
+  \begin{center}
+    \includegraphics[width=.6\textwidth{}]{spring-plot.png}
+    \hspace{.1\textwidth{}}
     \includegraphics[width=.15\textwidth{}]{spring-table.png}
   \end{center}
   \[
@@ -75,20 +84,21 @@
 \end{frame}
 
 \begin{frame}{验证弹簧系统}
+  \begin{center}
+    \includegraphics[width=.8\textwidth{}]{spring-slope.png}
+  \end{center}
+
   \[
   e = 0.0163
   \]
-
-  \begin{center}
-    \includegraphics[width=.4\textwidth{}]{spring-plot.png}
-    \includegraphics[width=.4\textwidth{}]{spring-slope.png}
-  \end{center}
 \end{frame}
 
 \begin{frame}{对变化进行建模}
-  未来值 = 现在值 + 变化
 
-  变化 = 未来值 - 现在值
+  \begin{itemize}
+  \item 未来值 $=$ 现在值 $+$ 变化
+  \item 变化 $=$ 未来值 $-$ 现在值
+  \end{itemize}
 
   \begin{description}
   \item[离散时间] 差分方程(difference equation)
@@ -103,13 +113,13 @@
     对于数列$A = {a_0, a_1, a_2, a_3, ...}$, 其一阶差分定义为:
     \[
     \Delta a_0 = a_1 - a_0
-    \]\\[-25pt]
+    \]\\[-20pt]
     \[
     \Delta a_1 = a_2 - a_1
-    \]\\[-25pt]
+    \]\\[-20pt]
     \[
     \Delta a_2 = a_3 - a_2
-    \]\\[-25pt]
+    \]\\[-20pt]
     \[
     \Delta a_3 = a_4 - a_3
     \]
@@ -122,7 +132,7 @@
 
 \begin{frame}{差分方程}
   \begin{center}
-    \includegraphics[width=.6\textwidth{}]{difference.png}
+    \includegraphics[width=.8\textwidth{}]{difference.png}
   \end{center}
 \end{frame}
 
@@ -131,10 +141,10 @@
 \begin{block}{}
     \[
     \Delta a_0 = a_1 - a_0 = 1010.0 - 1000.0 = 10.0
-    \]\\[-25pt]
+    \]\\[-20pt]
     \[
     \Delta a_1 = a_2 - a_1 = 1020.1 - 1010.0 = 10.1
-    \]\\[-25pt]
+    \]\\[-20pt]
     \[
     \Delta a_2 = a_3 - a_2 = 1030.3 - 1020.1 = 10.2
     \]
@@ -195,7 +205,7 @@ $B = (80000, 79919.13, 79837.45, ...)$
 
 \begin{frame}{按揭买房}
   \begin{center}
-    \includegraphics[width=.8\textwidth{}]{mort.png}
+    \includegraphics[width=.9\textwidth{}]{mort.png}
   \end{center}
 \end{frame}
 
@@ -244,14 +254,14 @@ $B = (80000, 79919.13, 79837.45, ...)$
 \begin{frame}{地高辛在血流中的变化}
   \begin{center}
     \includegraphics[width=.8\textwidth{}]{digoxin-table.png}\\
-    \includegraphics[width=.6\textwidth{}]{digoxin-fig.png}
+    \includegraphics[width=.8\textwidth{}]{digoxin-fig.png}
   \end{center}
 \[
 \Delta a_n = -0.31a_n
-\]\\[-25pt]
+\]\\[-20pt]
 \[
 a_{n+1} -  a_n = -0.31a_n
-\]\\[-25pt]
+\]\\[-20pt]
 \[
 a_{n+1} = 0.69a_n
 \]
@@ -303,7 +313,7 @@ $a_4 = 1040.6 = 1.01(1030.3) = 1.01^4 (1000)$
 
 \begin{frame}{$a_{n+1}=ra_n + b$}
   \begin{center}
-    \includegraphics[width=.4\textwidth{}]{rb.png}
+    \includegraphics[height=.9\textheight{}]{rb.png}
   \end{center}
 \end{frame}
 
