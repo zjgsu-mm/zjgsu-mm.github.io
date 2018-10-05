@@ -8,7 +8,7 @@ date:   2018-09-28 8:05:00 +0800
 
 本次作业的链接：
 
-https://classroom.github.com/a/2i3yH8I-
+[https://classroom.github.com/a/2i3yH8I-][https://classroom.github.com/a/2i3yH8I-]
 
 作业提交的最后期限为：2018年10月13日星期六23:00
 
