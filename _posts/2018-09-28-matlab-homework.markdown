@@ -10,6 +10,7 @@ date:   2018-09-28 8:05:00 +0800
 
 https://classroom.github.com/a/2i3yH8I-
 
+作业提交的最后期限为：2018年10月13日星期六23:00
 
 [classroom]: /classroom
 [github]: https://www.github.com
