@@ -1,6 +1,8 @@
-\documentclass[mathserif, table]{beamer}
+\documentclass[UTF8]{ctexbeamer}
+%\documentclass[mathserif, table]{beamer}
 
 \usetheme{Boadilla}
+\usefonttheme[onlymath]{serif}
 
 \usepackage{subfig}
 \usepackage{multirow}
@@ -10,9 +12,9 @@
 
 \lstset{language=C,tabsize=4, keepspaces=true,
     xleftmargin=2em,xrightmargin=2em, aboveskip=1em,
-    backgroundcolor=\color{lightgray},    % 定义背景颜色
-    frame=none,                      % 表示不要边框
-    keywordstyle=\color{blue}\bfseries,
+    %backgroundcolor=\color{lightgray},    % 定义背景颜色
+    %frame=none,                      % 表示不要边框
+    %keywordstyle=\color{blue}\bfseries,
     breakindent=22pt,
     numbers=left,stepnumber=1,numberstyle=\tiny,
     basicstyle=\footnotesize,
@@ -22,18 +24,14 @@
     escapeinside={/*@}{@*/}
 }
 
-% Chinese
-\usepackage{ctex}
-\setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{KaiTi}
-
 % Title
 \title{第5章 模拟方法建模}
 \author{韩建伟}
 \institute{
   信息学院\\
-  \texttt{mm@hanjianwei.com}
+  \texttt{hanjianwei@zjgsu.edu.cn}
 }
-\date{2017/11/10}
+\date{2018/11/02}
 
 \begin{document}
 
