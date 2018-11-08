@@ -1,3 +1,88 @@
+\documentclass[UTF8]{ctexbeamer}
+
+\input{../settings.tex}
+
+% Title
+\title{第9章 决策论建模}
+\author{韩建伟}
+\institute{
+  信息学院\\
+  \texttt{mm@hanjianwei.com}
+}
+\date{2017/12/08}
+
+\begin{document}
+
+% Title page
+\begin{frame}[plain]
+  \titlepage{}
+\end{frame}
+
+\begin{frame}{转轮游戏}
+
+  \begin{itemize}
+  \item<1-> 4美元一次，你会去玩吗？
+  \item<2-> $E = (0-\$4) \times 0.5 + (\$10 - \$4) \times 0.5 = \$1$
+  \end{itemize}
+
+  \begin{figure}
+    \centering
+    \includegraphics[height=.4\textheight{}]{9_1.png}
+  \end{figure}
+  
+\end{frame}
+
+\begin{frame}{Deal or No Deal?}
+
+  \begin{itemize}
+  \item<1-> 剩下两个盒子，一个\$0.01，一个\$1000000
+  \item<1-> Deal: 庄家给你\$400000报酬
+  \item<1-> No Deal: 继续玩
+  \item<2-> $E = \$1 \times 0.5 + \$1000000 \times 0.5 \approx \$500000$
+  \item<3-> 你会如何抉择？
+  \end{itemize}
+  
+\end{frame}
+
+\begin{frame}{修建什么样的工厂？}
+  
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth{}]{factories.png}
+  \end{figure}
+
+  \begin{itemize}
+  \item 无法估计需求概率该如何决策？
+  \item 高、中、低需求的概率分别是$25\%$、$40\%$、$35\%$决策如何改变？
+  \item 这些估计是相关的频率还是专家判断？
+  \item $\cdots$
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{概率和期望值}
+
+  \begin{itemize}
+  \item<1-> 掷出一对骰子，点数之和为7算赢
+  \item<1-> \$1玩一次，赢了可以拿回\$1并另得\$5
+  \item<2-> $E = \$5 \times \frac{1}{6} + (-\$1) \times \frac{5}{6} = 0$
+  \item<3-> 公平游戏
+  \item<4-> 如果\$2玩一次呢？
+  \end{itemize}
+  
+  \begin{figure}
+    \centering
+    \includegraphics[width=\textwidth{}]{dice.png}
+  \end{figure}
+  
+\end{frame}
+
+\begin{frame}{人寿保险}
+
+  \begin{itemize}
+  \item<1-> 保险公司将一年期\$250000保单卖给49岁女性
+  \item<1-> 保费\$550
+  \item<1-> 49岁女性的存活率0.99791
 \documentclass[mathserif, table]{beamer}
 
 \usetheme{Boadilla}
