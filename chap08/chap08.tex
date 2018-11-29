@@ -9,7 +9,7 @@
   信息学院\\
   \texttt{hanjianwei@zjgsu.edu.cn}
 }
-\date{2017/12/01}
+\date{2018/11/23}
 
 \begin{document}
 
@@ -52,7 +52,7 @@
       \hline
     \end{tabular}
   \end{table}
-  
+
 \end{frame}
 
 \begin{frame}{哥尼斯堡七桥问题}
@@ -67,10 +67,10 @@
   \begin{figure}
     \centering
     \includegraphics[width=.3\textwidth{}]{Konigsberg_bridges.png}
-    \includegraphics[width=.3\textwidth{}]{600px-7_bridges.svg.png}
-    \includegraphics[width=.3\textwidth{}]{500px-Konigsburg_graph.svg.png}
+    \includegraphics[width=.3\textwidth{}]{7_bridges.png}
+    \includegraphics[width=.3\textwidth{}]{Konigsburg_graph.png}
   \end{figure}
-  
+
 \end{frame}
 
 \begin{frame}{图的着色问题}
@@ -80,9 +80,9 @@
 
   \begin{figure}
     \centering
-    \includegraphics[width=.6\textwidth{}]{Map_of_USA_with_state_names.svg.png}
+    \includegraphics[width=.6\textwidth{}]{Map_of_USA_with_state_names.png}
   \end{figure}
-  
+
 \end{frame}
 
 \begin{frame}{图的着色问题}
@@ -94,7 +94,7 @@
     \includegraphics[height=.35\textheight{}]{map_graph2.png}
     \includegraphics[height=.35\textheight{}]{map_graph.png}
   \end{figure}
-  
+
 \end{frame}
 
 \begin{frame}{图着色的应用}
@@ -119,7 +119,7 @@
     \centering
     \includegraphics[height=.4\textheight{}]{graph.png}
   \end{figure}
-  
+
 \end{frame}
 
 \begin{frame}{Kevin Bacon的六度分隔}
@@ -204,9 +204,16 @@
 
 \begin{frame}{考虑线段模型的价格}
   \begin{block}{}
+    \only<1>{
     \[
     \alpha + \beta\sum_{k=1}^4(f_{1,4}(x_k)-y_k)^2
     \]
+    }
+    \only<2>{
+    \[
+    \alpha + \beta\sum_{k=i}^j(f_{i,j}(x_k)-y_k)^2
+    \]
+    }
     令$\alpha=10, \beta=1$, 则：
   \end{block}
   \begin{table}
@@ -311,7 +318,7 @@
   \begin{block}{顶点覆盖问题}
     给定一个图$G=(V(G), E(G))$,顶点覆盖问题就是要寻找一个成员数最少的子集$S \subseteq V(G)$使得图中每条边与$S$中至少一个成员关联。
   \end{block}
-  
+
 \end{frame}
 
 \begin{frame}{最短路径算法}
@@ -345,13 +352,13 @@
 \begin{frame}{最大流问题}
   \begin{figure}
     \centering
-    \includegraphics[width=.6\textwidth]{Max_flow.svg.png}
+    \includegraphics[width=.6\textwidth]{Max_flow.png}
   \end{figure}
 
   \begin{block}{}
     给定一个有向图$G=(V(G), A(G))$，源$s$和汇$t$，以及对每条有向边$ij \in A(G)$的有限流容量$u_{ij}$，求图中从顶点$s$到顶点$t$的最大流
   \end{block}
-  
+
 \end{frame}
 
 \begin{frame}{最大流算法}
@@ -394,7 +401,7 @@
       \includegraphics[width=.8\textwidth]{salesman.pdf}
     \end{minipage}
   \end{figure}
-  
+
 \end{frame}
 
 \begin{frame}{用数学规划解顶点覆盖问题}
@@ -402,7 +409,7 @@
     \centering
     \includegraphics[width=.4\textwidth]{city.pdf}
   \end{figure}
-  
+
   令:
   \[
   x_i =\left\{
@@ -423,7 +430,7 @@
 \end{frame}
 
 \begin{frame}{顶点覆盖问题的数学规划}
-  \[ 
+  \[
   \begin{array}{lcl}
     & \mbox{Min}\ \sum_{i \in V(G)} x_i & \\
     \mbox{s.t.} & &  \\
@@ -447,7 +454,7 @@
 \begin{frame}{最大流}
   令$x_{ij}$表示从顶点$i$到顶点$j$的流.
 
-  \[ 
+  \[
   \begin{array}{lcl}
     & \mbox{Max}\ z = \sum_{j} x_{sj} & \\
     \mbox{s.t.} & &  \\
@@ -460,24 +467,12 @@
     &
   \end{array}
   \]
-  
-\end{frame}
 
-\begin{frame}{课后任务}
-  \begin{itemize}
-  \item 了解图的各种算法
-  \item 编程实现最短路径、最大流等算法
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
-  Questions?
-  谢谢！
 \end{frame}
 
 \end{document}
 
-%%% Local Variables: 
+%%% Local Variables:
 %%% TeX-master: t
 %%% TeX-engine: xetex
-%%% End: 
+%%% End:
