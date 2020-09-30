@@ -74,5 +74,5 @@ defaultContentLanguage = "en"           # Default language to use
 
   [params.utteranc]
     enable = true
-    repo = "zjgsu-mm/comments-for-homepage"    # The repo to store comments
+    repo = "zjgsu-mm/zjgsu-mm.github.io"    # The repo to store comments
     issueTerm = "pathname"
