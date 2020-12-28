@@ -9,7 +9,7 @@
   信息学院\\
   \texttt{hanjianwei@zjgsu.edu.cn}
 }
-\date{2019/11/27}
+\date{2020/12/23}
 
 \begin{document}
 
@@ -373,6 +373,7 @@
       \rowcolor{lightgray}\textbf{\quad{}第2步} & 计算$u_{min}$，即有向路径的最小容量\\
       \multirow{2}*{\textbf{\quad{}第3步}} & 对有向路径中的每条有向边$i, j$，\\
       & 更新当前图中的剩余容量$u_{ij} \leftarrow u_{ij}-u_{min}$\\
+      & 更新反向容量$u_{ji} \leftarrow u_{ji}+u_{min}$\\
       \rowcolor{lightgray}\textbf{第5步} & 令$f_c \leftarrow f_c + u_{min}$，回到第1步
     \end{tabular}
   \end{table}
